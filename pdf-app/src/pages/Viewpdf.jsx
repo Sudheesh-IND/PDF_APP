@@ -53,6 +53,17 @@ function Viewpdf() {
     
   }
 
+  //downloading a pdf file
+  const downloadPDF=()=>{
+    const pdfUrl = `${PDF_URL}/pdffiles/${pdfName}`;
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = pdfName; // specify the filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+  }
+
   //api call fro extraction
   const handleExtraction = async () => {
 
@@ -92,7 +103,7 @@ function Viewpdf() {
       <div className="container">
         <div className="row">
           <div className='fixed-top'>
-            <button  className='btn btn-primary m-2'><a href={`${PDF_URL}/pdffiles/${pdfName}`} download={pdfName}></a>Download</button>
+            <button  className='btn btn-primary m-2' onClick={downloadPDF}>Download</button>
             <button onClick={handleExtraction} className='btn btn-success m-2'>Extract pages</button>
           </div>
           <div className="col-md-2"></div>
