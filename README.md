@@ -24,13 +24,13 @@ Font awesome
 
 
 ### Starting Page
-The application starts with a page with a button getting started and when we click on this page this button direct us to the Login page. React-Router-Dom library is used for navigating through each pages in this application.
+The application starts with a page with a button getting started and when we click on this page this button direct us to the Login page. React-Router-Dom library is used for navigating through each pages in this application. React bootstrap and MD Bootstrap are used for the designing purpose.
 
 
 
 ### Login Page and Register page
 
-This page consists of a form to login with input fields for posting data for registration and login and while login a token is generated for authentication purposes on the backend.The token required for authentication is generated using JSON Web Token library. Bcrypt is used for encrypting the password.
+This page consists of a form to login with input fields for posting data for registration and login and while login a token is generated for authentication purposes on the backend.The token required for authentication is generated using JSON Web Token library. Bcrypt is used for encrypting the password. React hook form library is used for from validation.
 
 ### Home page
 
