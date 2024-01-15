@@ -2,7 +2,7 @@
 
 Website demo video: https://youtu.be/ksaaGYpyi0U?si=ppA3ipFUqLFNp-Ti
 
-sample account use (email:sudheeshamv2000@gmail.com,pass:123)
+
 
 ## Technologies used
 
